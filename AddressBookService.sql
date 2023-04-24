@@ -40,3 +40,7 @@ update AddressBook set Name='Profesional Address Book', Type='Profesional' where
 update AddressBook set Name='Friend Address Book', Type='Friend' where ID=4
 update AddressBook set Name='Family Address Book', Type='Family' where ID=5
 update AddressBook set Name='Friend Address Book', Type='Friend' where ID=6
+
+
+/* ability to get number of AddressBook group by type */
+select Type,count(*) from AddressBook group by Type
