@@ -31,3 +31,12 @@ SELECT State, COUNT(*) as count FROM AddressBook GROUP BY State /* Count size of
 
 /* sorted persons name for given city */
 select * from AddressBook where City='Aurangabad' order by FirstName ASC
+
+
+/* Alter AddressBook to add Name and Type */
+alter table AddressBook add Name varchar(50), Type varchar(50)
+update AddressBook set Name='Family Address Book', Type='Family' where ID=1
+update AddressBook set Name='Profesional Address Book', Type='Profesional' where ID=3
+update AddressBook set Name='Friend Address Book', Type='Friend' where ID=4
+update AddressBook set Name='Family Address Book', Type='Family' where ID=5
+update AddressBook set Name='Friend Address Book', Type='Friend' where ID=6
