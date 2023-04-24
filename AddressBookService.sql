@@ -17,4 +17,9 @@ insert into AddressBook values('Kush', 'Chakale', 'Paithan Gate', 'Aurangabad', 
 
 /* update cantact using person's first name and last name */
 update AddressBook set Address='Hutatma Smarak', City='Jintur', Zip=111122, PhoneNumber='9999955555', Email='ashabh@gmail.com'
-where FirstName= 'Asha' and LastName='Bharti' 
+where FirstName= 'Asha' and LastName='Bharti'
+
+/* delete persons details using persons name */
+delete from AddressBook where FirstName='Asha'
+
+
