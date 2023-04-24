@@ -25,4 +25,5 @@ delete from AddressBook where FirstName='Asha'
 /* Retrieve person belonging city and state */
 select * from AddressBook where City='Aurangabad' or State='Maharashtra'
 
-
+select City, Count(*) from AddressBook group by City /* Count size of AddressBook by City */         
+SELECT State, COUNT(*) as count FROM AddressBook GROUP BY State /* Count size of AddressBook by State */
