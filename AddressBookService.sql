@@ -11,7 +11,7 @@ select * from AddressBook
 
 /*Insert new contacts in table */
 insert into AddressBook values('Archana', 'Puri', 'Marwad Galli', 'Kausadi', 'Maharashtra', 123456, '9088776655', 'archanap@gmail.com')
-insert into AddressBook values('Asha', 'Bharti', 'Ganapati Nagar', 'Lahan', 'Maharashtra', 123444, '1234567889', 'ashabharti@gmail.com')
+insert into AddressBook values('Asha', 'Bharti', 'Ganapati Nagar', 'Lahan', 'Rajsthan', 123444, '1234567889', 'ashabharti@gmail.com')
 insert into AddressBook values('Neha', 'Mehta', 'Chatrapati Shivaji colony', 'Parbhani', 'Maharashtra', 123455, '9088744445', 'neha@gmail.com')
 insert into AddressBook values('Kush', 'Chakale', 'Paithan Gate', 'Aurangabad', 'Maharashtra', 100231, '7778776655', 'Nagesh@gmail.com')
 
@@ -21,5 +21,8 @@ where FirstName= 'Asha' and LastName='Bharti'
 
 /* delete persons details using persons name */
 delete from AddressBook where FirstName='Asha'
+
+/* Retrieve person belonging city and state */
+select * from AddressBook where City='Aurangabad' or State='Maharashtra'
 
 
