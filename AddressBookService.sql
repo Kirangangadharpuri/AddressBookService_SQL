@@ -44,3 +44,8 @@ update AddressBook set Name='Friend Address Book', Type='Friend' where ID=6
 
 /* ability to get number of AddressBook group by type */
 select Type,count(*) from AddressBook group by Type
+
+/* add new person to both family and frien */
+insert into AddressBook values('Sandeep', 'Puri', 'Paithan Gate', 'Nashik', 'Maharashtra', 100233, '7777776666', 'Sandeep@gmail.com','Family Address Book', 'Family'),
+                              ('Kanchan', 'Netke', 'Netke Galli', 'Jintur', 'Maharashtra', 120233, '7774446666', 'Kanchan@gmail.com','Friend Address Book', 'Friend')
+select * from AddressBook
